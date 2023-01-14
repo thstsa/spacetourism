@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background: linear-gradient(black,rgb(27 20 56));background-attachment: fixed;">
     <head>
         
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,800" rel="stylesheet">
+        
+        <link rel="stylesheet" href="styles/main.css">
         <title>Space Tourism Project</title>
         
     </head>
     
     <body>
         
-        <h1>Hello World🌮</h1>
+        <!-- A cool earth parllax scene with a clever slogan -->
+        <div id="earthParallax">
+            <h1 id="sloganHeader">Paving the way for<br>modern space tourism.</h1>
+            <h2 id="sloganSub">One giant leap at a time.</h2>
+            <img id="parallaxEarth" src="res/bigearth.png">
+        </div>
         
+        <script src="scripts/effects/circlepath.js"></script>
         <script src="scripts/effects/parallax.js"></script>
+        <script src="scripts/main.js"></script>
     </body>
     
 </html>

@@ -1,0 +1,29 @@
+body{
+    font-family: 'Poppins';
+}
+#sloganHeader{
+    
+    background: linear-gradient(to right,#df5fff,#4e7cff);
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 100px;
+    font-weight: 600;
+}
+
+#sloganSub{
+    text-align: center;
+    font-size: 50px;
+    color:rgb(73 70 116);
+    font-weight: lighter;
+    margin:0;
+}
+
+
+#parallaxEarth{
+    max-width:1424px;
+    width:80vw;
+    margin:auto;
+    display:block;
+    margin-top:-40vh;
+}
