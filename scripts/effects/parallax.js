@@ -1,4 +1,5 @@
 function lerp(start,stop,t){
+    if(Math.abs(start-stop) < 1)return stop;
     return start + (stop-start)*t;
 }
 
@@ -50,8 +51,8 @@ class MouseParallax {
         
         let element = document.getElementById(elementId);
         element.style.position = this.oldProperties[elementId][0];
-        element.getElementById(elementId).style.zIndex = this.oldProperties[elementId][1];
-        element.getElementById(elementId).style.transform = this.oldProperties[elementId][2];
+        element.style.zIndex = this.oldProperties[elementId][1];
+        element.style.transform = this.oldProperties[elementId][2];
         //All CSS properties affected by the MouseParallax will revert to how their original values before the element was enabled
         delete this.oldProperties[elementId];
         delete this.elements[elementId];
@@ -121,8 +122,8 @@ class AutoParallax {
         
         let element = document.getElementById(elementId);
         element.style.position = this.oldProperties[elementId][0];
-        element.getElementById(elementId).style.zIndex = this.oldProperties[elementId][1];
-        element.getElementById(elementId).style.transform = this.oldProperties[elementId][2];
+        element.style.zIndex = this.oldProperties[elementId][1];
+        element.style.transform = this.oldProperties[elementId][2];
         //All CSS properties affected by the MouseParallax will revert to how their original values before the element was enabled
         delete this.oldProperties[elementId];
         delete this.elements[elementId];
@@ -184,8 +185,8 @@ class ScrollParallax {
     disable(elementId){
         let element = document.getElementById(elementId);
         element.style.position = this.oldProperties[elementId][0];
-        element.getElementById(elementId).style.zIndex = this.oldProperties[elementId][1];
-        element.getElementById(elementId).style.transform = this.oldProperties[elementId][2];
+        element.style.zIndex = this.oldProperties[elementId][1];
+        element.style.transform = this.oldProperties[elementId][2];
         //All CSS properties affected by the parallax will revert to how their original values before the element was enabled
         delete this.oldProperties[elementId];
         delete this.elements[elementId];
