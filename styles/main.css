@@ -28,7 +28,7 @@ body{
     width:80vw;
     margin:auto;
     display:block;
-    margin-top:-30vw;
+    margin-top:calc((-40vh + -30vw)/2);
     pointer-events: none;
 }
 
