@@ -1,16 +1,36 @@
 body{
     font-family: 'Poppins';
+    color:rgb(241 239 228);
 }
-#sloganHeader{
-    
+
+
+.blueGradientText{
     background: linear-gradient(to right,#df5fff 20%,#4e7cff);
-    text-align: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.bigHeader{
     font-size: 100px;
-    font-weight: 600;
     font-family: 'Bebas Neue';
     letter-spacing: 1px;
+}
+
+.subHeader{
+    font-size:5.5vw;
+    font-family: 'Bebas Neue';
+    letter-spacing:.055vw;
+}
+
+
+.paragraphText{
+    font-weight:lighter;
+    color:rgb(151 149 189);
+}
+
+
+#sloganHeader{
+    text-align: center;
     border-bottom: 10px;
 }
 
@@ -22,15 +42,6 @@ body{
     margin:0;
 }
 
-
-#parallaxEarth{
-    max-width:1424px;
-    width:80vw;
-    margin:auto;
-    display:block;
-    margin-top:calc((-40vh + -30vw)/2);
-    pointer-events: none;
-}
 
 #stickyHeader{
     position:fixed;
@@ -63,4 +74,33 @@ body{
 
 #joinButton:hover{
     box-shadow: 0 0 50px 15px rgb(97 239 193 / 55%);
+}
+
+
+.infoSection{
+    width:50vw;
+    max-width: 900px;
+    min-width: 400px;
+}
+
+
+/*images*/
+#parallaxEarth{
+    max-width:1424px;
+    width:80vw;
+    margin:auto;
+    display:block;
+    margin-top:calc((-40vh + -30vw)/2);
+    pointer-events: none;
+}
+
+
+#parallaxShuttle{
+    width:30vw;
+    min-width: 400px;
+}
+
+.imageCredit{
+    opacity: .3;
+    text-align: center;
 }
