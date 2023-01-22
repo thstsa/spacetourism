@@ -56,7 +56,7 @@ function hideAllPages(){
 
 function fancyReload(){
     fade("fadeCover",FADESPEED,"in",function(){
-        locatio.reload();
+        location.reload();
     });
 }
 
