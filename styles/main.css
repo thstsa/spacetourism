@@ -103,7 +103,7 @@ body{
 
 
 
-.timelineElement{
+.roadmapBlock, .premiumRoadmapBlock{
     border: 1px solid rgba(255,255,255,0.2);
     box-shadow: 0 0 50px rgb(240 220 255 / 10%);
     background-color: rgb(39 33 60);
@@ -114,10 +114,37 @@ body{
     border-radius: 15px;
 }
 
-.timelineElement h3{
+.roadmapConnector{
+    background-color:rgba(255,255,255,0.2);
+    width:1px;
+    height:50px;
+    margin:auto;
+}
+
+.roadmapGap{
+    height:10px;
+}
+
+.roadmapBlock h3, .premiumRoadmapBlock h3{
     font-weight: 600;
 }
 
+
+.premiumRoadmapBlock{
+    background: linear-gradient(to right,rgb(179 78 208),rgb(67 100 208));
+    color: rgb(59 59 60);
+    border: 3px solid black;
+    box-shadow: 0 0 100px rgb(223 95 255 / 50%);
+}
+
+.premiumRoadmapBlock span{
+    color:rgb(38,38,38);
+}
+
+.premiumRoadmapBlock img{
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
 
 
 /*images*/

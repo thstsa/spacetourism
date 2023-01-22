@@ -27,7 +27,7 @@
 
                 <h1 id="sloganHeader" class="bigHeader"><span class="blueGradientText">Paving the way for</span><br><span class="blueGradientText">modern space tourism.</span></h1>
                 <h2 id="sloganSub">One giant leap at a time.</h2>
-                <button id="joinButton" class="importantButton" onclick="alert('This button will eventually auto scroll the user down to the payment section')">JOIN TODAY</button>
+                <button id="joinButton" class="importantButton" onclick="alert('This button will eventually open the pricing page')">JOIN TODAY</button>
                 <img id="parallaxEarth" src="res/bigearth.png"><!-- Earth graphic is an edited version of a public domain image of earth from the Wikipeida Commons-->
 
             </div>
@@ -50,7 +50,7 @@
                 <div class="infoSection">
                     <h1 class="subHeader">IT STARTS <span id="typewrite" style="color:rgb(160 100 255)">WITH YOU.|</span></h1>
                     <h2 class="paragraphText">No longer is space travel limited to heavily funded government expeditions. The Armstrong 24-month Space Program provides you with the knowledge and resources needed to shape you into a fully fledged astronaut. Our program covers all areas of space travel, from on-ground planning and preparation to in-space exercise and nutrition. Those who finish the program are granted with an official NASA Astronaut Certificate and an all-expenses paid 3 month voyage into deep space.</h2>
-                    <button class="importantButton" onclick="openPage('roadmapPage')" style="margin-left: 0">MORE INFO</button>
+                    <button class="importantButton" onclick="openPage('roadmapPage')" style="margin-left: 0">LEARN MORE</button>
                 </div>
 
             </div>
@@ -59,23 +59,16 @@
         
         
         <div style="height:200px"></div>
-        
+        <!-- Roadmap page that explains every step of the course-->
         <div id="roadmapPage" class="page">
-            <div class="timelineElement">
-                <h3>Month 1-2: <span class="blueGradientText">Boogie</span></h3>
-                <p>ooga booga ooga booga ooga booga ooga booga ooga booga ooga booga ooga booga ooga booga ooga booga ooga booga ooga booga ooga booga ooga booga </p>
-            </div>
-            <br><br>
-            <div class="timelineElement">
-                <h3>Month 2-4: <span class="blueGradientText">Woogie</span></h3>
-                <p>ooga booga ooga booga ooga booga ooga booga ooga booga ooga booga ooga booga ooga booga ooga booga ooga booga ooga booga ooga booga ooga booga </p>
-            </div>
+            <div id="roadmapContent"></div>
         </div>
         
         
         
         <script src="scripts/effects/circlepath.js"></script>
         <script src="scripts/page-system/page-system.js"></script>
+        <script src="scripts/roadmap/roadmap.js"></script>
         <script src="scripts/effects/parallax.js"></script>
         <script src="scripts/main.js"></script>
         
