@@ -1,5 +1,5 @@
-function lerp(start,stop,t){
-    if(Math.abs(start-stop) < 1)return stop;
+function lerp(start,stop,t,margin=1){
+    if(Math.abs(start-stop) < margin)return stop;
     return start + (stop-start)*t;
 }
 

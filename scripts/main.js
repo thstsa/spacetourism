@@ -1,3 +1,4 @@
+
 //changing CSS files when window gets too small
 
 let currentCSS = "main.css";
@@ -13,8 +14,6 @@ function updateCSS(){
 }
 updateCSS();
 window.addEventListener("resize",updateCSS);
-
-
 
 
 
