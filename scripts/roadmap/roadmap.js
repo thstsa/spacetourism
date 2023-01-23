@@ -11,7 +11,7 @@ function generateRoadmap(arr){
         if(arr[i][0] == "pro"){
             contentArea.innerHTML += `
             <div class="premiumRoadmapBlock">
-                <h3>${arr[i][1]}<img src="res/star.svg" align="center"></h3>
+                <h3><img src="res/star.svg" align="center">${arr[i][1]}</h3>
                 <p>${arr[i][2]}</p>
             </div>
             `;
