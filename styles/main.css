@@ -1,6 +1,7 @@
 body{
     font-family: 'Poppins';
     color:rgb(151 149 189);
+    overflow-x: hidden;
 }
 
 
@@ -18,7 +19,7 @@ body{
 
 
 .bigGap{
-    height: 400px;
+    height: 200px;
 }
 
 #stickyHeader{
