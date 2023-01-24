@@ -61,6 +61,8 @@ function typewriter(elementId, words, wordPause,emptyPause){
 typewriter("typewrite",["here","now","with you"],15,5);
 
 
-let roadmapParallaxScene = new MouseParallax();
-roadmapParallaxScene.enable("roadmapContent",0.2);
+let roadmapMP = new MouseParallax();
+roadmapMP.enable("roadmapContent",0.2);
+let roadmapSP = new ScrollParallax();
+roadmapSP.enable("roadmapHeader",0.1);
 
