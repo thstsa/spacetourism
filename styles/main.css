@@ -1,10 +1,15 @@
+:root {
+    --subHeaderSize:min(5.5vw,100px);
+}
+
+
 body{
     font-family: 'Poppins';
     color:rgb(151 149 189);
     overflow-x: hidden;
 }
 
-
+/*
 #fadeCover{
     width:100vw;
     height:100vh;
@@ -16,7 +21,7 @@ body{
     z-index:9998;
     pointer-events: none;
 }
-
+*/
 
 .bigGap{
     height: 200px;
@@ -37,7 +42,7 @@ body{
 
 
 .blueGradientText{
-    background: linear-gradient(to right,#df5fff 40%,#4e7cff);
+    background: linear-gradient(to right,#df5fff,#4e7cff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -50,13 +55,16 @@ body{
 
 .subHeader{
     color:rgb(241 239 228);
-    font-size:5.5vw;
+    font-size:var(--subHeaderSize);
     font-family: 'Bebas Neue';
     letter-spacing:.055vw;
+    margin-top:10px;
+    margin-bottom: 10px;
 }
 
 
 .paragraphText{
+    font-size:23px;
     font-weight:lighter;
 }
 
@@ -97,9 +105,11 @@ body{
 
 
 .infoSection{
-    width:50vw;
+    width:40vw;
     max-width: 900px;
     min-width: 400px;
+    display: grid;
+    align-content: center;
 }
 
 
@@ -163,9 +173,12 @@ body{
 }
 
 
-#parallaxShuttle{
-    width:30vw;
+#blurbImage{
+    width:25vw;
+    margin:2.5vw;
     min-width: 400px;
+    border-radius: 10px;
+    box-shadow:rgb(0 0 0 / 28%) 0px 20px 40px
 }
 
 .imageCredit{

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" style="background: linear-gradient(black,rgb(27 20 56));background-attachment: fixed;">
     <head>
-        <!-- Shiloh was here-->
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -21,64 +21,66 @@
         <br><br>
         
         
-        <div id="landingPage" class="page">
-            <!-- A cool earth parllax scene with a clever slogan -->
-            <div id="earthParallax">
+        <!-- A cool earth parllax scene with a clever slogan -->
+        <div id="earthParallax">
 
-                <h1 id="sloganHeader" class="bigHeader"><span class="blueGradientText">Paving the way for</span><br><span class="blueGradientText">modern space tourism.</span></h1>
-                <h2 id="sloganSub">One giant leap at a time.</h2>
-                <button id="joinButton" class="importantButton" onclick="alert('This button will eventually open the pricing page')">JOIN TODAY</button>
-                <img id="parallaxEarth" src="res/bigearth.png"><!-- Earth graphic is an edited version of a public domain image of earth from the Wikipeida Commons-->
+            <h1 id="sloganHeader" class="bigHeader"><span class="blueGradientText">Paving the way for</span><br><span class="blueGradientText">modern space tourism.</span></h1>
+            <h2 id="sloganSub">One <span style="font-weight: 600">giant leap</span> at a time.</h2>
+            <button id="joinButton" class="importantButton" onclick="alert('This button will eventually open the pricing page')">SEE PLANS</button>
+            <img id="parallaxEarth" src="res/bigearth.png"><!-- Earth graphic is an edited version of a public domain image of earth from the Wikipeida Commons-->
 
-            </div>
+        </div>
 
 
     
-            <div class="bigGap"></div>
+        <div class="bigGap"></div>
 
 
-            <!-- Basic information section explaining the company-->
-            <div style="display:flex;justify-content: center">
+        <!-- Basic information section explaining the company-->
+        <div style="display:flex;justify-content: center">
 
-                <div style="display: grid;align-content:center">
-                    <img id="parallaxShuttle" src="res/shuttle.png">
-                    <p class="imageCredit">The Boeing Company</p>
-                    <!--You can use boeing images for free as long as you credit them on educational projects
-                    https://secure.boeingimages.com/FAQ#:~:text=A.-,All%20Boeing%20copyrighted%20images%20on%20the%20www.boeing.com%20website,The%20preferred%20font%20is%20Helvetica. -->
+            <div>
+                <img id="blurbImage" src="res/aldrin.jpg">
 
-                </div>
-
-                <div class="infoSection">
-                    <h1 class="subHeader">IT STARTS <span id="typewrite" style="color:rgb(160 100 255)">WITH YOU.|</span></h1>
-                    <h2 class="paragraphText">No longer is space travel limited to heavily funded government expeditions. The Armstrong 24-month Space Program provides you with the knowledge and resources needed to shape you into a fully fledged astronaut. Our program covers all areas of space travel, from on-ground planning and preparation to in-space exercise and nutrition. Those who finish the program are granted with an official NASA Astronaut Certificate and an all-expenses paid 3 month voyage into deep space.</h2>
-                    <button class="importantButton" onclick="openPage('roadmapPage')" style="margin-left: 0">LEARN MORE</button>
-                </div>
+                <!--You can use boeing images for free as long as you credit them on educational projects
+                https://secure.boeingimages.com/FAQ#:~:text=A.-,All%20Boeing%20copyrighted%20images%20on%20the%20www.boeing.com%20website,The%20preferred%20font%20is%20Helvetica. -->
 
             </div>
 
-        
-        </div>
-        
-        
-        
-        <!-- Roadmap page that explains every step of the course-->
-        <div id="roadmapPage" class="page">
-            
-            <div id="roadmapHeader">
-                <h1 class="subHeader" style="text-align: center;margin-bottom: 0;font-size:70px">WE'VE GOT YOU COVERED</h1>
-                <h2 id="sloganSub" style="font-weight: 600"><span class="blueGradientText">Every step of the way.</span></h2>
+            <div class="infoSection">
+                <h1 class="subHeader">WE MAKE <span id="typewrite" style="color:rgb(160 100 255)"></span></h1>
+                <h2 class="paragraphText">No longer is space travel limited to heavily funded government expeditions. Partnering with NASA, The Armstrong 24-month Space Program provides you with the knowledge and resources needed to shape you into a fully fledged astronaut. Our program covers all areas of space travel, from on-ground planning and preparation to in-space exercise and nutrition. Those who finish the program are granted with official astronaut recognition from NASA and an all-expenses-paid 3 month voyage(6 months for <span style="font-weight:600" class="blueGradientText">Pro Plan Members</span>) into deep space.</h2>
+
             </div>
-            <div class="bigGap"></div>
-            <div id="roadmapContent"></div>
-            
+
         </div>
+
+        <div class="bigGap"></div>
+        <div class="bigGap"></div>
+        
+        <p style="text-align: center">**Pricing plans here eventually**</p>
+        
+        <div class="bigGap"></div>
+        <div class="bigGap"></div>
+        
+        
+        <h1 class="subHeader" style="text-align:center">WE'RE WITH YOU</h1>
+        <h2 style="font-weight: 600;text-align: center"><span class="blueGradientText">Every <i>tiny step</i> of the way.</span></h2>
+        <br><br><br>
+        <div id="roadmapContent"></div>
+
+
+
+        
+        
+        
         
         <div class="bigGap"></div>
 
         <p class="imageCredit">© 2023 Armstrong, Inc.</p>
         
         
-        
+        <script src="scripts/effects/fade.js"></script>
         <script src="scripts/effects/circlepath.js"></script>
         <script src="scripts/page-system/page-system.js"></script>
         <script src="scripts/roadmap/roadmap.js"></script>
