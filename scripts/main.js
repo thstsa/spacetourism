@@ -21,10 +21,14 @@ window.addEventListener("resize",updateCSS);
 
 let earthParallaxScene = new ScrollParallax();
 
-earthParallaxScene.enable("parallaxEarth",0.5);
-earthParallaxScene.enable("sloganHeader",0.2);
-earthParallaxScene.enable("sloganSub",0.3);
+earthParallaxScene.enable("parallaxEarth",0.3);
+earthParallaxScene.enable("sloganSub",0.1);
 
+
+//speed load all the images
+document.getElementById("blurbImage").setAttribute("src","res/aldrin.png");
+document.getElementById("blurbImage").setAttribute("src","res/rover.png");
+document.getElementById("blurbImage").setAttribute("src","res/launch.png");
 
 
 //typewriter effect
