@@ -9,6 +9,8 @@ body{
     overflow-x: hidden;
 }
 
+
+
 /*
 #fadeCover{
     width:100vw;
@@ -179,6 +181,16 @@ body{
     min-width: 400px;
     border-radius: 10px;
     box-shadow:rgb(0 0 0 / 28%) 0px 20px 40px
+}
+
+#preloadedImages {
+   width: 0px;
+   height: 0px;
+   display: inline;
+   background-image: url(res/aldrin.png);
+   background-image: url(res/launch.png);
+   background-image: url(res/rover.png);
+   background-image: url();
 }
 
 .imageCredit{
