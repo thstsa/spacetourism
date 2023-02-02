@@ -11,7 +11,25 @@ body{
     overflow-x: hidden;
 }
 
-
+a:link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  
+  a:active {
+    text-decoration: underline;
+    color: white;
+  }
 
 /*
 #fadeCover{
@@ -44,6 +62,10 @@ body{
     z-index:9999;
 }
 
+#stickyHeader p {
+    display: inline-block;
+    vertical-align: middle;
+}
 
 .blueGradientText{
     background: linear-gradient(to right,rgb(223 95 255),rgb(78 124 255));
@@ -65,7 +87,6 @@ body{
     margin-top:10px;
     margin-bottom: 10px;
 }
-
 
 .paragraphText{
     font-size:max(16px,var(--paraFontSize));
@@ -181,9 +202,11 @@ body{
 .pricingcontainer{
     width: 85%;
     margin: auto;
+    margin-top: 15vh;
 }
 .pricingcontainer h1{
     text-align: center;
+    margin-top: 15vh;
 }
 .price-row {
     display: flex;
