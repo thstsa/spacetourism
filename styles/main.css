@@ -51,21 +51,33 @@ a:link {
 
 #stickyHeader{
     position:fixed;
-    width: 100vw;
     top:0;
     left:0;
+    right:0;
     padding:15px;
     color:white;
     background-color: rgba(255,255,255,0.1);
     backdrop-filter: blur(50px);
     border-bottom: 1px solid rgba(255,255,255,0.2);
+    display:flex;
+    justify-content: space-between;
     z-index:9999;
 }
 
-#stickyHeader p {
+.pageLink{
     display: inline-block;
-    vertical-align: middle;
+    margin: 20px;
+    transition: 0.3s;
+    opacity: .5;
+    cursor: pointer;
+    margin-top:0;
+    margin-bottom: 0;
 }
+
+.pageLink:hover{
+    opacity: 1;
+}
+
 
 .blueGradientText{
     background: linear-gradient(to right,rgb(223 95 255),rgb(78 124 255));
@@ -81,7 +93,7 @@ a:link {
 
 .subHeader{
     color:rgb(241 239 228);
-    font-size:max(70px,var(--subHeaderSize));
+    font-size:var(--subHeaderSize);
     font-family: 'Bebas Neue';
     letter-spacing:.055vw;
     margin-top:10px;
