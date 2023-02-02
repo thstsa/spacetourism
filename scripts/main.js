@@ -1,7 +1,7 @@
 //https://www.nasa.gov/feature/frequently-asked-questions-0/#:~:text=The%20Astronaut%20Candidate%20Program%20requires,usually%20obtained%20through%20the%20military.
 
 //changing CSS files when window gets too small
-/*
+
 let currentCSS = "main.css";
 function updateCSS(){
     if(window.innerWidth < 950 && currentCSS != "mobile.css"){
@@ -16,8 +16,6 @@ function updateCSS(){
 updateCSS();
 window.addEventListener("resize",updateCSS);
 
-
-*/
 
 let earthParallaxScene = new ScrollParallax();
 
