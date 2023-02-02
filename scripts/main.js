@@ -17,11 +17,9 @@ updateCSS();
 window.addEventListener("resize",updateCSS);
 
 
-
-
 let earthParallaxScene = new ScrollParallax();
 
-earthParallaxScene.enable("parallaxEarth",0.3);
+earthParallaxScene.enable("sloganHeader",0.3);
 earthParallaxScene.enable("sloganSub",0.1);
 
 
@@ -83,7 +81,7 @@ function typewriter(elementId, words, wordPause,emptyPause){
     
 }
 
-typewriter("typewrite",["history","astronauts","the future"],80,5);
+typewriter("typewrite",["history","astronauts","the future"],35,5);
 
 
 

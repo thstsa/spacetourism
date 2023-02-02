@@ -1,5 +1,7 @@
 :root {
-    --subHeaderSize:min(5.5vw,100px);
+    --subHeaderSize:min(5.5vw,90px);
+    --priceTitleSize:min(50px);
+    --paraFontSize:min(1.5vw,23px);
 }
 
 
@@ -9,7 +11,25 @@ body{
     overflow-x: hidden;
 }
 
-
+a:link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  
+  a:active {
+    text-decoration: underline;
+    color: white;
+  }
 
 /*
 #fadeCover{
@@ -26,7 +46,7 @@ body{
 */
 
 .bigGap{
-    height: 200px;
+    height: 40vh;
 }
 
 #stickyHeader{
@@ -42,9 +62,13 @@ body{
     z-index:9999;
 }
 
+#stickyHeader p {
+    display: inline-block;
+    vertical-align: middle;
+}
 
 .blueGradientText{
-    background: linear-gradient(to right,#df5fff,#4e7cff);
+    background: linear-gradient(to right,rgb(223 95 255),rgb(78 124 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -57,16 +81,15 @@ body{
 
 .subHeader{
     color:rgb(241 239 228);
-    font-size:var(--subHeaderSize);
+    font-size:max(70px,var(--subHeaderSize));
     font-family: 'Bebas Neue';
     letter-spacing:.055vw;
     margin-top:10px;
     margin-bottom: 10px;
 }
 
-
 .paragraphText{
-    font-size:23px;
+    font-size:max(16px,var(--paraFontSize));
     font-weight:lighter;
 }
 
@@ -117,48 +140,141 @@ body{
 
 
 
-.roadmapBlock, .premiumRoadmapBlock{
+#roadmapSlide{
     border: 1px solid rgba(255,255,255,0.2);
     box-shadow: 0 0 50px rgb(240 220 255 / 10%);
     background-color: rgb(39 33 60);
     backdrop-filter: blur(50px);
     width: 50%;
+    max-width: 500px;
+    min-width: 300px;
     margin: auto;
     padding: 15px;
     border-radius: 15px;
 }
 
-.roadmapConnector{
-    background-color:rgba(255,255,255,0.2);
-    width:1px;
-    height:50px;
-    margin:auto;
+#rmSlideImage{
+    width:100%;
+    border-radius: 10px;
+    opacity: .9;
 }
 
-.roadmapGap{
-    height:10px;
-}
 
-.roadmapBlock h3, .premiumRoadmapBlock h3{
+#roadmapSlide h3{
     font-weight: 600;
 }
 
 
-.premiumRoadmapBlock{
-    background: linear-gradient(to right,rgb(179 78 208),rgb(67 100 208));
-    color: rgb(59 59 60);
-    border: 3px solid black;
-    box-shadow: 0 0 100px rgb(223 95 255 / 50%);
+#rmDotContainer{
+    display: flex;
+    justify-content: center;
 }
 
-.premiumRoadmapBlock span{
-    color:rgb(38,38,38);
+.rmSideDot, .rmMainDot{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    border-radius: 10px;
+    border: 2px solid;
+    margin-left:5px;
+    margin-right: 5px;
+    cursor: pointer;
+    opacity: 0.3;
+}
+.rmMainDot{
+    background-color:rgb(151 149 189);
+    opacity: 1;
 }
 
-.premiumRoadmapBlock img{
-    margin-right: 10px;
-    margin-bottom: 3px;
+.slideButton{
+    background-color: transparent;
+    border: none;
+    flex-shrink: 0;
+    border-radius: 10px;
+    cursor: pointer;
 }
+
+.slideButton:hover{
+    background-color: rgba(255,255,255,0.05);
+}
+
+
+.pricingcontainer{
+    width: 85%;
+    margin: auto;
+    margin-top: 15vh;
+}
+.pricingcontainer h1{
+    text-align: center;
+    margin-top: 15vh;
+}
+.price-row {
+    display: flex;
+    justify-content: center;
+}
+.price-col {
+    width:350px;
+    background: rgb(39 33 60);
+    padding: 30px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    text-align: center;
+    margin:20px;
+    display: grid;
+}
+.price-col h3{
+    font-size: 22px;
+    color: #ddd;
+}
+.price-col h2{
+    font-size: var(--priceTitleSize);
+    font-family: 'Bebas Neue';
+    margin: 0;
+    font-weight: 600;
+}
+.price-col p{
+    text-align: left;
+}
+.price-col button {
+    font-family: 'Poppins';
+    font-weight: 800;
+    width: 100%;
+    padding: 14px 0;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+} 
+
+#expPriceOpt{
+    margin-top:4vh;
+    margin-bottom:4vh;
+}
+
+#expPriceOpt button{
+    background:rgba(255,255,255,0.1);
+}
+
+
+
+#comPriceOpt h2{
+    color: white;
+    text-shadow: 0 0 30px rgb(235 157 255);
+    letter-spacing: 1px;
+}
+
+#comPriceOpt button{
+    background: rgb(223 95 255);
+    color: rgb(20,20,20);
+    box-shadow: 0 0 50px rgb(223 95 255 / 72%);
+}
+
+
+
+
 
 #footer{
     border-top:1px solid rgba(255,255,255,0.2);
@@ -189,55 +305,3 @@ body{
     text-align: center;
 }
 
-.pricingcontainer{
-    width: 85%;
-    margin: auto;
-}
-.pricingcontainer h1{
-    text-align: center;
-}
-.price-row {
-    width: 80%;
-    max-width: 1100px;
-    margin:auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 25px;
-}
-.price-col {
-    background: rgb(39 33 60);
-    padding: 10% 15%;
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 10px;
-    text-align: center;
-}
-.price-col h3{
-    font-size: 22px;
-    color: #ddd;
-}
-.price-col h2{
-    font-size: 32px;
-    margin: 0;
-    font-weight: 600;
-    background: linear-gradient(to right,#ee66ff,#4e7cff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.price-col p{
-    text-align: left;
-}
-.price-col button {
-    font-family: 'Poppins';
-    width: 100%;
-    padding: 14px 0;
-    background: transparent;
-    color: #fff;
-    font-size: 15px;
-    border: 1px solid #ee66ff;
-    border-radius: 6px;
-    margin-top: 30px;
-    cursor: pointer;
-} 
-.price-col button:hover{
-    background: linear-gradient(to right,#ee66ff,#4e7cff);
-}

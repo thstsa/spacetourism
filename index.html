@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="background: linear-gradient(black,rgb(27 20 56));background-attachment: fixed;">
+<html lang="en" style="background: linear-gradient(black,rgb(27 20 56));background-attachment: fixed; background-color: black;">
     <head>
         
         <meta charset="UTF-8">
@@ -10,19 +10,28 @@
         <link rel="preload" as="image" href="res/launch.png">
         <link rel="preload" as="image" href="res/rover.png">
         
+        <link rel="preload" as="image" href="res/spacecenter.png">
+        <link rel="preload" as="image" href="res/zerog.png">
+        <link rel="preload" as="image" href="res/fitness.png">
+        <link rel="preload" as="image" href="res/recovery.png">
+        
         <link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,800" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
         <link id="mainStylesheet" rel="stylesheet" href="styles/main.css">
         <title>Armstrong | Space Travel Reimagined</title>
-        
+         
     </head>
     
     <body>
         
         <div id="fadeCover"></div>
-        <div id="stickyHeader"><p style="font-weight: 600;margin:0">Armstrong</p></div>
+        <div id="stickyHeader">
+            <p style="font-family: 'Bebas Neue'; font-size: 25px; margin:0"><a href="index.html" target="_self">Armstrong</a></p>
+            <p style="font-weight: 600;margin:0">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+            <p style="font-weight: 600;margin:0"><a href="pricing.html" target="_self">Pricing</a></p>
+        </div>
         <br><br>
         
         <!-- A cool earth parllax scene with a clever slogan -->
@@ -36,7 +45,7 @@
 
 
     
-        
+        <div class="bigGap"></div>
 
 
         <!-- Basic information section explaining the company-->
@@ -49,37 +58,82 @@
 
             <div class="infoSection">
                 <h1 class="subHeader">WE MAKE <span id="typewrite" style="color:rgb(160 100 255)"></span></h1>
-                <h2 class="paragraphText">No longer is space travel limited to heavily funded government expeditions. Partnering with NASA, The Armstrong 24-month Space Program provides you with the knowledge and resources needed to shape you into a fully fledged astronaut. Our program covers all areas of space travel, from on-ground planning and preparation to in-space exercise and nutrition. Those who finish the program are granted with official astronaut recognition from NASA and an all-expenses-paid 3 month voyage(6 months for <span style="font-weight:600" class="blueGradientText">Pro Plan Members</span>) into deep space.</h2>
+                <h2 class="paragraphText">No longer is space travel limited to heavily funded government expeditions. Partnering with NASA, The Armstrong 24-month Space Program provides you with the knowledge and resources needed to shape you into a fully fledged astronaut. Our program covers all areas of space travel, from on-ground planning and preparation to in-space exercise and nutrition. Those who finish the program are granted with official astronaut recognition from NASA and an all-expenses-paid 3 month voyage(6 months for <span style="font-weight:600" class="blueGradientText">Commander Plan Members</span>) into deep space.</h2>
 
             </div>
 
         </div>
 
         <div class="bigGap"></div>
+        
+
+        
+        
+        
+        
+        <h1 class="subHeader" style="text-align:center">WE'RE WITH YOU</h1>
+        <h2 style="font-weight: 600;text-align: center"><span class="blueGradientText">Every <i>small step </i>of the way.</span></h2>
+        <br><br><br>
+        
+        <div id="roadmapSlide">
+            <div id="slideContent">
+                <img id="rmSlideImage">
+                
+                <div style="display:flex;justify-content: space-between;">
+                    <button class="slideButton" style="margin-right: 15px" onclick="prevRmSlide()"><img class="slideButtonImg" src="res/leftarrow.svg"></button>
+                    <div>
+                        <h3 id="rmSlideHeader"></h3>
+                        <p id="rmSlideSub"></p>
+                    </div>
+                    <button class="slideButton" style="margin-left: 15px" onclick="nextRmSlide()"><img class="slideButtonImg" src="res/rightarrow.svg"></button>
+                </div>
+                
+            </div>
+            
+            <div id="rmDotContainer"><span class="rmSideDot"></span></div>
+            
+        </div>
+
+        
+        <div class="bigGap"></div>
+        
+        
 
         <div class="pricingcontainer">
-            <h1 class="subHeader">CHOOSE YOUR PLAN</h1>
-            <h2 class="paragraphText" style="width: 87%; margin: auto; margin-bottom: 45px;">Whether you're looking to gain the skills and knowledge of a professional astronaut, or embark on an all-expenses-paid journey into space, our program will provide you with a truly unparalleled experience. Browse our packages below and take the first small step towards realizing your  space travel dreams.</h2>
-            </p>
+            <h1 class="subHeader">READY TO LAUNCH?</h1>
+            <!--<h2 class="paragraphText" style="width: 87%; margin: auto; margin-bottom: 45px;">Whether you're looking to gain the skills and knowledge of a professional astronaut, or embark on an all-expenses-paid journey into space, our program will provide you with a truly unparalleled experience. Browse our packages below and take the first small step towards realizing your  space travel dreams.</h2>
+            
+            **I'll find a way to include this. It just looked kinda crowded and I didn't feel like dealing with it
+            -->
+            <br><br><br>
             <div class="price-row">
-                <div class="price-col">
-                    <h2>Basic</h2>
-                    <h3>$50,000</h3>
-                    <p>24 months of astronaut training</p>
-                    <p>On-ground planning and preparation</p>
-                    <p>In-space exercise and nutrition</p>
-                    <p>Official NASA Astronaut Certificate upon completion</p>
+                <div id="expPriceOpt" class="price-col">
+                    
+                    <div>
+                        <p style="font-weight: 600;text-align:center;margin:0">Armstrong</p>
+                        <h2>EXPLORER</h2>
+                    </div>
+                    
+                    <h3>$49,999</h3>
+                    <p>12 month extensive intro training course</p>
+                    <p>Full Zero-Gravity training</p>
+                    <p>Physical training and education</p>
+                    <p>Official NASA Astronaut recognition</p>
                     <p>All-expenses-paid 3-month voyage into deep space</p>
-                    <button>Purchase</button>
+                    <button>PURCHASE</button>
                 </div>
-                <div class="price-col">
-                    <h2>Pro</h2>
-                    <h3>$100,000</h3>
-                    <p>Everything in Basic, plus: </p>
+                <div id="comPriceOpt" class="price-col">
+                    
+                    <div>
+                        <p style="font-weight: 600;text-align:center;margin:0">Armstrong</p>
+                        <h2>COMMANDER</h2>
+                    </div>
+                    <h3>$99,999</h3>
+                    <p style="font-weight: 600">Everything in Basic, plus: </p>
                     <p>All-expenses-paid 6-month voyage into deep space</p>
                     <p>Opportunity to participate in space research</p>
                     <p>Specialized training for extra-vehicular activities</p>
-                    <button>Purchase</button>
+                    <button>PURCHASE</button>
                 </div>
                 
             </div>
@@ -89,18 +143,7 @@
         <div class="bigGap"></div>
         
         
-        <h1 class="subHeader" style="text-align:center">WE'RE WITH YOU</h1>
-        <h2 style="font-weight: 600;text-align: center"><span class="blueGradientText">Every <i>small step </i>of the way.</span></h2>
-        <br><br><br>
-        <div id="roadmapContent"></div>
-
-
-
-        
-        
-        
-        
-        <div class="bigGap"></div>
+       
 
         <p class="imageCredit">© 2023 Armstrong, Inc.</p>
         
