@@ -185,16 +185,17 @@ a:link {
 .rmSideDot, .rmMainDot{
     display:inline-block;
     width:10px;
-    /*height:10px;*/
+    height:1px;
     border-radius: 10px;
     border: 2px solid;
     margin-left:5px;
     margin-right: 5px;
     cursor: pointer;
+    background-color:rgb(151 149 189);
     opacity: 0.3;
 }
 .rmMainDot{
-    background-color:rgb(151 149 189);
+    
     opacity: 1;
 }
 
@@ -219,6 +220,15 @@ a:link {
 .pricingcontainer h1{
     text-align: center;
     margin-top: 15vh;
+}
+
+.littleLogo{
+    font-weight: 600;
+    text-align:center !important;
+    margin:0;
+    font-family: 'Bebas Neue';
+    font-size: 150%;
+    letter-spacing: 1px;
 }
 .price-row {
     display: flex;
