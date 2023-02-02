@@ -59,7 +59,7 @@ body{
 
 .subHeader{
     color:rgb(241 239 228);
-    font-size:var(--subHeaderSize);
+    font-size:max(70px,var(--subHeaderSize));
     font-family: 'Bebas Neue';
     letter-spacing:.055vw;
     margin-top:10px;
@@ -68,7 +68,7 @@ body{
 
 
 .paragraphText{
-    font-size:var(--paraFontSize);
+    font-size:max(16px,var(--paraFontSize));
     font-weight:lighter;
 }
 
@@ -119,54 +119,63 @@ body{
 
 
 
-.roadmapBlock, .premiumRoadmapBlock{
+#roadmapSlide{
     border: 1px solid rgba(255,255,255,0.2);
     box-shadow: 0 0 50px rgb(240 220 255 / 10%);
     background-color: rgb(39 33 60);
     backdrop-filter: blur(50px);
     width: 50%;
+    max-width: 500px;
+    min-width: 300px;
     margin: auto;
     padding: 15px;
     border-radius: 15px;
 }
 
-.roadmapConnector{
-    background-color:rgba(255,255,255,0.2);
-    width:1px;
-    height:50px;
-    margin:auto;
+#rmSlideImage{
+    width:100%;
+    border-radius: 10px;
+    opacity: .9;
 }
 
-.roadmapGap{
-    height:10px;
-}
 
-.roadmapBlock h3, .premiumRoadmapBlock h3{
+#roadmapSlide h3{
     font-weight: 600;
 }
 
 
-.premiumRoadmapBlock{
-    background: linear-gradient(to right,rgb(179 78 208),rgb(67 100 208));
-    color: rgb(59 59 60);
-    border: 3px solid black;
-    box-shadow: 0 0 100px rgb(223 95 255 / 50%);
+#rmDotContainer{
+    display: flex;
+    justify-content: center;
 }
 
-.premiumRoadmapBlock span{
-    color:rgb(38,38,38);
+.rmSideDot, .rmMainDot{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    border-radius: 10px;
+    border: 2px solid;
+    margin-left:5px;
+    margin-right: 5px;
+    cursor: pointer;
+    opacity: 0.3;
+}
+.rmMainDot{
+    background-color:rgb(151 149 189);
+    opacity: 1;
 }
 
-.premiumRoadmapBlock img{
-    margin-right: 10px;
-    margin-bottom: 3px;
+.slideButton{
+    background-color: transparent;
+    border: none;
+    flex-shrink: 0;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-
-
-
-
-
+.slideButton:hover{
+    background-color: rgba(255,255,255,0.05);
+}
 
 
 .pricingcontainer{
