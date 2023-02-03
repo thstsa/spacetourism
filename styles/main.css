@@ -11,25 +11,7 @@ body{
     overflow-x: hidden;
 }
 
-a:link {
-    text-decoration: none;
-    color: white;
-  }
-  
-  a:visited {
-    text-decoration: none;
-    color: white;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-    color: white;
-  }
-  
-  a:active {
-    text-decoration: underline;
-    color: white;
-  }
+
 
 /*
 #fadeCover{
@@ -62,6 +44,23 @@ a:link {
     display:flex;
     justify-content: space-between;
     z-index:9999;
+}
+
+#headerLogo{
+    opacity: .75;
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    transition: .3s;
+    cursor: pointer;
+    margin:0;
+}
+#headerLogo:hover{
+    opacity: 1;
+}
+
+#headerLogo img{
+    width:20px;
+    margin-right: 7px;
 }
 
 .pageLink{
