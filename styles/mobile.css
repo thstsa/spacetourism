@@ -1,0 +1,367 @@
+:root {
+    --subHeaderSize:min(5.5vw,90px);
+    --priceTitleSize:min(50px);
+    --paraFontSize:min(1.5vw,23px);
+}
+
+
+body{
+    font-family: 'Poppins';
+    color:rgb(151 149 189);
+    overflow-x: hidden;
+    margin: 0;
+}
+
+
+
+/*
+#fadeCover{
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+    background: linear-gradient(black,rgb(27 20 56));
+    background-attachment: fixed;
+    z-index:9998;
+    pointer-events: none;
+}
+*/
+
+.bigGap{
+    height: 40vh;
+}
+
+#stickyHeader{
+    display: none;
+}
+
+#mobileHeader{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    padding:15px;
+    color:white;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter:blur(50px);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    display:flex;
+    justify-content: space-between;
+    z-index:9999;
+}
+
+#burgerPopup{
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    bottom:0;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    z-index:9998;
+    
+    display: grid;
+    justify-content: center;
+    align-items:center;
+}
+
+#mobileHeader img{
+    width:25px;
+    opacity: .75;
+}
+
+#headerLogo{
+    opacity: .75;
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    transition: .3s;
+    cursor: pointer;
+    margin:0;
+}
+#headerLogo:hover{
+    opacity: 1;
+}
+
+#headerLogo img{
+    width:20px;
+    margin-right: 7px;
+}
+
+.pageLink{
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+
+#earthParallax{
+    display:none;
+}
+
+#mobileEarth img{
+    width:100vw;
+    left:0;
+    right:0;
+    margin-top:-10vw;
+}
+
+#mobileEarth h1{
+    font-family: 'Bebas Neue';
+    text-align: center;
+}
+
+.blueGradientText{
+    background: linear-gradient(to right,rgb(223 95 255),rgb(78 124 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bigHeader{
+    font-size: 100px;
+    font-family: 'Bebas Neue';
+    letter-spacing: 1px;
+}
+
+.subHeader{
+    color:rgb(241 239 228);
+    font-size:var(--subHeaderSize);
+    font-family: 'Bebas Neue';
+    letter-spacing:.055vw;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.paragraphText{
+    font-size:max(16px,var(--paraFontSize));
+    font-weight:lighter;
+}
+
+
+#sloganHeader{
+    text-align: center;
+    border-bottom: 10px;
+    margin-top: 120px;
+}
+
+#sloganSub{
+    text-align: center;
+    font-size: 30px;
+    color:rgb(73,70,116);
+    font-weight: lighter;
+    margin:0;
+}
+
+
+.importantButton{
+    font-family: 'Poppins';
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(1 0 12);
+    background: rgb(97 239 141);
+    padding: 10px;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 0 0 50px 10px rgb(97 239 193 / 50%);
+    cursor: pointer;
+}
+
+.importantButton:hover{
+    box-shadow: 0 0 50px 15px rgb(97 239 193 / 55%);
+}
+
+
+.infoSection{
+    width:40vw;
+    max-width: 900px;
+    min-width: 400px;
+    display: grid;
+    align-content: center;
+}
+
+
+
+#roadmapSlide{
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 0 50px rgb(240 220 255 / 10%);
+    background-color: rgb(39 33 60);
+    backdrop-filter: blur(50px);
+    width: 50%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#rmSlideImage{
+    width:100%;
+    border-radius: 10px;
+    opacity: .9;
+}
+
+
+#roadmapSlide h3{
+    font-weight: 600;
+}
+
+
+#rmDotContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.rmSideDot, .rmMainDot{
+    display:inline-block;
+    width:10px;
+    height:1px;
+    border-radius: 10px;
+    border: 2px solid;
+    margin-left:5px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color:rgb(151 149 189);
+    opacity: 0.3;
+}
+.rmMainDot{
+    
+    opacity: 1;
+}
+
+.slideButton{
+    background-color: transparent;
+    border: none;
+    flex-shrink: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.slideButton:hover{
+    background-color: rgba(255,255,255,0.05);
+}
+
+
+.pricingcontainer{
+    width: 85%;
+    margin: auto;
+    margin-top: 15vh;
+}
+.pricingcontainer h1{
+    text-align: center;
+    margin-top: 15vh;
+}
+
+.littleLogo{
+    font-weight: 600;
+    text-align:center !important;
+    margin:0;
+    font-family: 'Bebas Neue';
+    font-size: 150%;
+    letter-spacing: 1px;
+}
+.price-row {
+    display: flex;
+    justify-content: center;
+}
+.price-col {
+    width:350px;
+    background: rgb(39 33 60);
+    padding: 30px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    text-align: center;
+    margin:20px;
+    display: grid;
+}
+.price-col h3{
+    font-size: 22px;
+    color: #ddd;
+}
+.price-col h2{
+    font-size: var(--priceTitleSize);
+    font-family: 'Bebas Neue';
+    margin: 0;
+    font-weight: 600;
+}
+.price-col p{
+    text-align: left;
+}
+.price-col button {
+    font-family: 'Poppins';
+    font-weight: 800;
+    width: 100%;
+    padding: 14px 0;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+} 
+
+#expPriceOpt{
+    margin-top:4vh;
+    margin-bottom:4vh;
+}
+
+#expPriceOpt button{
+    background:rgba(255,255,255,0.1);
+}
+
+
+
+#comPriceOpt h2{
+    color: white;
+    text-shadow: 0 0 30px rgb(235 157 255);
+    letter-spacing: 1px;
+}
+
+#comPriceOpt button{
+    background: rgb(223 95 255);
+    color: rgb(20,20,20);
+    box-shadow: 0 0 50px rgb(223 95 255 / 72%);
+}
+
+
+
+
+
+#footer{
+    border-top:1px solid rgba(255,255,255,0.2);
+    padding:10px;
+}
+
+
+/*images*/
+#parallaxEarth{
+    max-width:1424px;
+    width:80vw;
+    margin:auto;
+    display:block;
+    margin-top:calc((-40vh + -30vw)/2);
+    pointer-events: none;
+}
+
+
+#blurbImage{
+    width:25vw;
+    margin:2.5vw;
+    min-width: 400px;
+    border-radius: 10px;
+    box-shadow:rgb(0 0 0 / 28%) 0px 20px 40px
+}
+
+.imageCredit{
+    opacity: .3;
+    text-align: center;
+}
+
