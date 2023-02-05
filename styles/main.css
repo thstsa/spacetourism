@@ -46,6 +46,15 @@ body{
     z-index:9999;
 }
 
+#mobileHeader{
+    display: none;
+}
+
+#burgerPopup{
+    display:none;
+}
+
+
 #headerLogo{
     opacity: .75;
     font-family: 'Bebas Neue';
@@ -77,7 +86,7 @@ body{
     opacity: 1;
 }
 
-
+#mobileEarth{display: none}
 .blueGradientText{
     background: linear-gradient(to right,rgb(223 95 255),rgb(78 124 255));
     -webkit-background-clip: text;

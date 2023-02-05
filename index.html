@@ -3,7 +3,8 @@
     <head>
         
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
         <link rel="preload" as="image" href="res/aldrin.png">
@@ -42,6 +43,21 @@
                 </div>
             </div>
         </div>
+        
+        
+        <!-- mobile version of the header-->
+        <div id="mobileHeader">
+            <img src="res/logowhite.png">
+            <img id="burgerIcon" src="res/menu.svg" onclick="toggleBurgerMenu()">
+        </div>
+        
+        <div id="burgerPopup">
+            <p class="pageLink" onclick="alert('Not yet!')">Technologies</p>
+            <p class="pageLink" onclick="window.open('pricing.html','_self')">Pricing</p>
+            <p class="pageLink" onclick="alert('Not yet!')">Sources</p>
+        </div>
+        
+        
         <br><br>
         
         <!-- A cool earth parllax scene with a clever slogan -->
@@ -53,6 +69,13 @@
 
         </div>
 
+        
+        <!--Mobile version of the parallax earth scene-->
+        <div id="mobileEarth">
+            <br><br><br>
+            <h1><span class="blueGradientText">Paving the way for</span><br><span class="blueGradientText">modern space tourism</span></h1>
+            <img id="mobileEarth" src="res/smallearth.png">
+        </div>
 
     
         <div class="bigGap"></div>
@@ -110,10 +133,15 @@
         
         <script src="scripts/effects/fade.js"></script>
         <script src="scripts/effects/circlepath.js"></script>
-        <script src="scripts/page-system/page-system.js"></script>
-        <script src="scripts/roadmap/roadmap.js"></script>
+        <script src="scripts/effects/typewriter.js"></script>
         <script src="scripts/effects/parallax.js"></script>
-        <script src="scripts/main.js"></script>
+        
+        <script src="scripts/page-system/page-system.js"></script>
+        
+        <script src="scripts/roadmap/roadmap.js"></script>
+        
+        <script src="scripts/mobile/mobile.js"></script>
+   
         
     </body>
     

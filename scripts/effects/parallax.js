@@ -193,3 +193,12 @@ class ScrollParallax {
     }
     
 }
+
+
+
+
+
+let earthParallaxScene = new ScrollParallax();
+
+earthParallaxScene.enable("sloganHeader",0.3);
+earthParallaxScene.enable("sloganSub",0.1);
