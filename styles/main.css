@@ -211,12 +211,12 @@ body{
 }
 
 
-.pricingcontainer{
+.container{
     width: 85%;
     margin: auto;
     margin-top: 15vh;
 }
-.pricingcontainer h1{
+.container h1{
     text-align: center;
     margin-top: 15vh;
 }
