@@ -307,8 +307,21 @@ body{
 
 
 #footer{
-    border-top:1px solid rgba(255,255,255,0.2);
-    padding:10px;
+    width: 50%;
+    margin: auto;
+    opacity: 0.3;
+    display: flex;
+    justify-content: space-around
+}
+
+#footer p{
+    margin:0;
+}
+
+#footer img{
+    width:40px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 /*images*/
