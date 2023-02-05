@@ -92,6 +92,7 @@ body{
 }
 
 .pageLink{
+    color:white;
     cursor: pointer;
     text-align: center;
     font-weight: 600;
@@ -112,8 +113,13 @@ body{
 }
 
 #mobileEarth h1{
+    font-size: 11vw;
     font-family: 'Bebas Neue';
     text-align: center;
+}
+#mobileEarth p{
+    text-align: center;
+    font-weight: lighter;
 }
 
 .blueGradientText{
