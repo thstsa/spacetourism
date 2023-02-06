@@ -18,13 +18,6 @@ open-source nav arrows and menu icons: iconoir.com
 
 NASA's rule on image use(we're good): https://gpm.nasa.gov/image-use-policy#:~:text=NASA%20content%20(images%2C%20videos%2C,purposes%20without%20needing%20explicit%20permissions.
 
-SLS info
-https://www.nasa.gov/exploration/systems/sls/index.html
-https://en.wikipedia.org/wiki/Space_Launch_System
-
-Rescue and Recovery
-https://www.nasa.gov/subject/5338/rescue-and-recovery/
-https://www.nasa.gov/feature/nasa-s-spacex-crew-rescue-and-recovery
 
 Mohon, Lee. "Space Launch System." NASA, 27 January 2023, https://www.nasa.gov/exploration/systems/sls/index.html. Accessed 3 February 2023. 
 "Space Launch System." Wikipedia, Wikimedia Foundation, 28 January 2023, https://en.wikipedia.org/wiki/Space_Launch_System. Accessed 3 February 2023.
@@ -35,3 +28,4 @@ Mohon, Lee. "Space Launch System." NASA, 27 January 2023, https://www.nasa.gov/e
 “Primary life support system.” Wikipedia, Wikimedia Foundation, 27 August 2021, https://en.wikipedia.org/wiki/Primary_life_support_system. Accessed 5 February 2023.
 “Spacewalk Spacesuit Basics.” NASA, 4 October 2019, https://www.nasa.gov/feature/spacewalk-spacesuit-basics. Accessed 5 February 2023.
 
+photograph by , distributed under a CC-BY 2.0 license
