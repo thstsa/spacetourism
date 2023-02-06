@@ -1,5 +1,5 @@
 :root {
-    --subHeaderSize:min(5.5vw,90px);
+    --subHeaderSize:40px;
     --priceTitleSize:min(50px);
     --paraFontSize:min(1.5vw,23px);
 }
@@ -186,13 +186,24 @@ body{
 }
 
 
+.imageBlurb{
+    display: flex;
+    justify-content: center;
+}
+
+.imageBlurb img{
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow:rgb(0 0 0 / 28%) 0px 20px 40px;
+    
+}
+
 .infoSection{
-    width:40vw;
-    max-width: 900px;
-    min-width: 400px;
+    width:80vw;
     display: grid;
     align-content: center;
 }
+
 
 
 
@@ -200,7 +211,6 @@ body{
     border: 1px solid rgba(255,255,255,0.2);
     box-shadow: 0 0 50px rgb(240 220 255 / 10%);
     background-color: rgb(39 33 60);
-    backdrop-filter: blur(50px);
     width: 50%;
     max-width: 500px;
     min-width: 300px;
@@ -256,12 +266,22 @@ body{
 }
 
 
-.pricingcontainer{
+.funFactSection{
+    width:80%;
+    padding:10px;
+    margin:auto;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgb(240 220 255 / 10%);
+    background-color: rgb(39 33 60);
+}
+
+.container{
     width: 85%;
     margin: auto;
     margin-top: 15vh;
 }
-.pricingcontainer h1{
+.container h1{
     text-align: center;
     margin-top: 15vh;
 }
