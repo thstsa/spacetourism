@@ -108,10 +108,7 @@ body{
     margin-bottom: 10px;
 }
 
-.paragraphText{
-    font-size:max(16px,var(--paraFontSize));
-    font-weight:lighter;
-}
+
 
 
 #sloganHeader{
@@ -151,12 +148,23 @@ body{
 
 
 .imageBlurb{
+    border: 2px solid;
+    box-shadow: 0 0 30px black;
+    border-radius: 15px;
+    background-color: rgb(39 33 60);
     display: flex;
     justify-content: center;
+    width:fit-content;
+    margin: auto;
+    padding: 20px;
 }
 
 .imageBlurb img{
-    margin: 25px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow:rgb(0 0 0 / 28%) 0px 20px 40px;
+    width:25vw;
+    min-width: 400px;
     border-radius: 10px;
     box-shadow:rgb(0 0 0 / 28%) 0px 20px 40px;
     
@@ -173,8 +181,8 @@ body{
 
 
 #roadmapSlide{
-    border: 1px solid rgba(255,255,255,0.2);
-    box-shadow: 0 0 50px rgb(240 220 255 / 10%);
+    border: 2px solid;
+    box-shadow: 0 0 30px black;
     background-color: rgb(39 33 60);
     width: 50%;
     max-width: 500px;
@@ -349,19 +357,17 @@ body{
 #parallaxEarth{
     max-width:1424px;
     width:80vw;
-    margin:auto;
-    display:block;
-    margin-top:calc((-40vh + -30vw)/2);
+    position: sticky;
+    top:0;
+    left:calc((100vw - min(1424px,80vw))/2);
+    opacity: .4;
+    z-index: -1;
     pointer-events: none;
 }
 
 
 #blurbImage{
-    width:25vw;
-    margin:2.5vw;
-    min-width: 400px;
-    border-radius: 10px;
-    box-shadow:rgb(0 0 0 / 28%) 0px 20px 40px;
+    
 }
 
 .imageCredit{
