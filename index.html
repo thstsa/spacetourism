@@ -37,7 +37,7 @@
             
             <div style="display: grid;align-items: center">
                 <div>
-                    <p class="pageLink" onclick="alert('Not yet!')">Technologies</p>
+                    <p class="pageLink" onclick="window.open('technologies.html','_self')">Technologies</p>
                     <p class="pageLink" onclick="window.open('pricing.html','_self')">Pricing</p>
                     <p class="pageLink" onclick="window.open('sources.html','_self')">Sources</p>
                 </div>
@@ -46,34 +46,36 @@
         
         
         <!-- mobile version of the header-->
-        <div id="mobileHeader">
+        <div id="mobileNavbar">
             <img src="res/logowhite.png" onclick="window.open('index.html','_self')">
             <img id="burgerIcon" src="res/menu.svg" onclick="toggleBurgerMenu()">
         </div>
         
         <div id="burgerPopup">
-            <p class="pageLink" onclick="alert('Not yet!')">Technologies</p>
+            <p class="pageLink" onclick="window.open('technologies.html','_self')">Technologies</p>
             <p class="pageLink" onclick="window.open('pricing.html','_self')">Pricing</p>
-            <p class="pageLink" onclick="alert('Not yet!')">Sources</p>
+            <p class="pageLink" onclick="window.open('sources.html','_self')">Sources</p>
         </div>
         
         
         <br><br>
         
-        <!-- A cool earth parllax scene with a clever slogan -->
-        <div id="earthParallax">
+        
+        
+        
+        
+        <div id="desktopHeader">
             <h1 id="sloganHeader" class="bigHeader"><span class="blueGradientText">Paving the way for</span><br><span class="blueGradientText">modern space tourism.</span></h1>
             <h2 id="sloganSub">One <span style="font-weight: 600">giant leap</span> at a time.</h2>
-            
-            <img id="parallaxEarth" src="res/bigearth.png"><!-- Earth graphic is an edited version of a public domain image of earth from the Wikipeida Commons-->
-
         </div>
+        
+        <img id="parallaxEarth" src="res/bigearth.png">
 
         
         <!--Mobile version of the parallax earth scene-->
-        <div id="mobileEarth">
+        <div id="mobileHeader">
             <br><br><br>
-            <h1><span class="blueGradientText">Paving the way for</span><br><span class="blueGradientText">modern space tourism</span></h1>
+            <h1><span class="blueGradientText">Paving the way for</span><br><span class="blueGradientText">modern space tourism.</span></h1>
             <p>One <span style="font-weight: 600">giant leap</span> at a time.</p>
             <img id="mobileEarth" src="res/smallearth.png">
         </div>
@@ -83,7 +85,7 @@
 
 
         <!-- Basic information section explaining the company-->
-        <div style="display:flex;justify-content: center">
+        <div class="imageBlurb grayBox">
 
             <div>
                 <img id="blurbImage" src="res/aldrin.jpg">
@@ -92,7 +94,7 @@
 
             <div class="infoSection">
                 <h1 class="subHeader">WE MAKE <span id="typewrite" style="color:rgb(160 100 255)"></span></h1>
-                <h2 class="paragraphText">No longer is space travel limited to heavily funded government expeditions. Partnering with NASA, The Armstrong 24-month Space Program provides you with the knowledge and resources needed to shape you into a fully-fledged astronaut. Our program covers all areas of space travel, from on-ground planning and preparation to in-space exercise and nutrition. Those who finish the program are granted with official astronaut recognition from NASA and an all-expenses-paid 3-month voyage (6-months for <span onclick="window.open('pricing.html','_self')" style="font-weight:600;cursor: pointer" class="blueGradientText">Commander Plan Members</span>) into deep space.</h2>
+                <p>No longer is space travel limited to heavily funded government expeditions. Partnering with NASA, The Armstrong 24-month Space Program provides you with the knowledge and resources needed to shape you into a fully-fledged astronaut. Our program covers all areas of space travel, from on-ground planning and preparation to in-space exercise and nutrition. Those who finish the program are granted with official astronaut recognition from NASA and an all-expenses-paid 3-month voyage (6-months for <span onclick="window.open('pricing.html','_self')" style="font-weight:600;cursor: pointer" class="blueGradientText">Commander Plan Members</span>) into deep space.</p>
             </div>
 
         </div>
@@ -108,7 +110,7 @@
         <h2 style="font-weight: 600;text-align: center"><span class="blueGradientText">Every <i>small step </i>of the way.</span></h2>
         <br><br><br>
         
-        <div id="roadmapSlide">
+        <div id="roadmapSlide" class="grayBox">
             <div id="slideContent">
                 <img id="rmSlideImage">
                 

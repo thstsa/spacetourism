@@ -1,5 +1,5 @@
 :root {
-    --subHeaderSize:min(5.5vw,90px);
+    --subHeaderSize:40px;
     --priceTitleSize:min(50px);
     --paraFontSize:min(1.5vw,23px);
 }
@@ -36,7 +36,7 @@ body{
     display: none;
 }
 
-#mobileHeader{
+#mobileNavbar{
     position: fixed;
     top:0;
     left:0;
@@ -69,7 +69,7 @@ body{
     align-items:center;
 }
 
-#mobileHeader img{
+#mobileNavbar img{
     width:25px;
     opacity: .75;
 }
@@ -98,27 +98,29 @@ body{
     font-weight: 600;
 }
 
+#desktopHeader{
+    display: none;
+}
 
 
-
-#earthParallax{
+#parallaxEarth{
     display:none;
 }
 
-#mobileEarth img{
+#mobileHeader img{
     width:100vw;
     left:0;
     right:0;
     margin-top:-30vw;
 }
 
-#mobileEarth h1{
+#mobileHeader h1{
     letter-spacing: -1px;
     font-size: 11vw;
     font-family: 'Bebas Neue';
     text-align: center;
 }
-#mobileEarth p{
+#mobileHeader p{
     text-align: center;
     font-weight: lighter;
 }
@@ -186,13 +188,24 @@ body{
 }
 
 
+.imageBlurb{
+    display: flex;
+    justify-content: center;
+}
+
+.imageBlurb img{
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow:rgb(0 0 0 / 28%) 0px 20px 40px;
+    
+}
+
 .infoSection{
-    width:40vw;
-    max-width: 900px;
-    min-width: 400px;
+    width:80vw;
     display: grid;
     align-content: center;
 }
+
 
 
 
@@ -200,7 +213,6 @@ body{
     border: 1px solid rgba(255,255,255,0.2);
     box-shadow: 0 0 50px rgb(240 220 255 / 10%);
     background-color: rgb(39 33 60);
-    backdrop-filter: blur(50px);
     width: 50%;
     max-width: 500px;
     min-width: 300px;
@@ -256,12 +268,22 @@ body{
 }
 
 
-.pricingcontainer{
+.funFactSection{
+    width:80%;
+    padding:10px;
+    margin:auto;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgb(240 220 255 / 10%);
+    background-color: rgb(39 33 60);
+}
+
+.container{
     width: 85%;
     margin: auto;
     margin-top: 15vh;
 }
-.pricingcontainer h1{
+.container h1{
     text-align: center;
     margin-top: 15vh;
 }
@@ -280,10 +302,7 @@ body{
 }
 .price-col {
     width:350px;
-    background: rgb(39 33 60);
     padding: 30px;
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 10px;
     text-align: center;
     margin:20px;
     display: grid;
@@ -360,15 +379,6 @@ body{
 
 
 /*images*/
-#parallaxEarth{
-    max-width:1424px;
-    width:80vw;
-    margin:auto;
-    display:block;
-    margin-top:calc((-40vh + -30vw)/2);
-    pointer-events: none;
-}
-
 
 #blurbImage{
     width:25vw;

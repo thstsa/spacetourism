@@ -20,7 +20,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
         <link id="mainStylesheet" rel="stylesheet" href="styles/main.css">
-        <title>Home | Armstrong</title>
+        <title>Sources | Armstrong</title>
          
     </head>
     
@@ -33,13 +33,26 @@
             
             <div style="display: grid;align-items: center">
                 <div>
-                    <p class="pageLink" onclick="alert('Not yet!')">Technologies</p>
+                    <p class="pageLink" onclick="window.open('technologies.html','_self')">Technologies</p>
                     <p class="pageLink" onclick="window.open('pricing.html','_self')">Pricing</p>
                     <p class="pageLink" onclick="window.open('sources.html','_self')">Sources</p>
                 </div>
             </div>
-        
         </div>
+        
+        
+        <!-- mobile version of the header-->
+        <div id="mobileNavbar">
+            <img src="res/logowhite.png" onclick="window.open('index.html','_self')">
+            <img id="burgerIcon" src="res/menu.svg" onclick="toggleBurgerMenu()">
+        </div>
+        
+        <div id="burgerPopup">
+            <p class="pageLink" onclick="window.open('technologies.html','_self')">Technologies</p>
+            <p class="pageLink" onclick="window.open('pricing.html','_self')">Pricing</p>
+            <p class="pageLink" onclick="window.open('sources.html','_self')">Sources</p>
+        </div>
+        
         <div class="container">
             <h1 class="subHeader" style="font-weight: 100px">WORKS CITED</h1>
             <h2 style="font-weight: 600;text-align: center; margin-top:0;margin-bottom:30px;"><span class="blueGradientText">No, we aren't a real company.</span></h2>
@@ -71,6 +84,9 @@
 
         <div id="footer"><p>© 2023 Armstrong, Inc.</p><img onclick="window.open('https://github.com/thstsa/spacetourism')" src="res/github-mark-white.png"></div>
         <br>
+        
+        <script src="scripts/mobile/mobile.js"></script>
+        <script src="scripts/effects/fade.js"></script>
     </body>
     
     </html>

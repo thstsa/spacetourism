@@ -31,6 +31,14 @@ body{
     height: 40vh;
 }
 
+.grayBox{
+    border: 2px solid;
+    box-shadow: 0 0 30px black;
+    background-color: rgb(39 33 60);
+    border-radius: 15px;
+    padding: 15px;
+}
+
 #stickyHeader{
     position:fixed;
     top:0;
@@ -46,14 +54,9 @@ body{
     z-index:9999;
 }
 
-#mobileHeader{
+#mobileNavbar,#mobileHeader,#burgerPopup{
     display: none;
 }
-
-#burgerPopup{
-    display:none;
-}
-
 
 #headerLogo{
     opacity: .75;
@@ -108,10 +111,7 @@ body{
     margin-bottom: 10px;
 }
 
-.paragraphText{
-    font-size:max(16px,var(--paraFontSize));
-    font-weight:lighter;
-}
+
 
 
 #sloganHeader{
@@ -150,6 +150,26 @@ body{
 }
 
 
+.imageBlurb{
+
+    display: flex;
+    justify-content: center;
+    width:fit-content;
+    margin: auto;
+    padding: 20px;
+}
+
+.imageBlurb img{
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow:rgb(0 0 0 / 28%) 0px 20px 40px;
+    width:25vw;
+    min-width: 400px;
+    border-radius: 10px;
+    box-shadow:rgb(0 0 0 / 28%) 0px 20px 40px;
+    
+}
+
 .infoSection{
     width:40vw;
     max-width: 900px;
@@ -160,17 +180,12 @@ body{
 
 
 
-#roadmapSlide{
-    border: 1px solid rgba(255,255,255,0.2);
-    box-shadow: 0 0 50px rgb(240 220 255 / 10%);
-    background-color: rgb(39 33 60);
-    backdrop-filter: blur(50px);
+#roadmapSlide{ 
     width: 50%;
     max-width: 500px;
     min-width: 300px;
     margin: auto;
     padding: 15px;
-    border-radius: 15px;
 }
 
 #rmSlideImage{
@@ -219,6 +234,16 @@ body{
     background-color: rgba(255,255,255,0.05);
 }
 
+.funFactSection{
+    width:40%;
+    padding:10px;
+    margin:auto;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgb(240 220 255 / 10%);
+    background-color: rgb(39 33 60);
+}
+
 
 .container{
     width: 85%;
@@ -246,7 +271,6 @@ body{
     width:350px;
     background: rgb(39 33 60);
     padding: 30px;
-    border: 1px solid rgba(255,255,255,0.2);
     border-radius: 10px;
     text-align: center;
     margin:20px;
@@ -304,6 +328,43 @@ body{
 
 
 
+.testimonial{
+    width:33%;
+    margin:auto;
+}
+
+.testimonialConnector{
+    background-color: rgb(151 149 189);
+    width:2px;
+    height: 10vh;
+    margin: auto;
+}
+
+.testimonial img{
+    width:80px;
+    border-radius: 100%;
+    opacity: .6;
+    margin-right: 15px;
+}
+
+
+.testimonialCite{
+    display: grid;
+    align-content: center;
+}
+.testimonialCite p{
+    margin: 0;
+}
+.testimonialName{
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+}
+
+.testimonial span{
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+}
+
 
 
 #footer{
@@ -328,19 +389,17 @@ body{
 #parallaxEarth{
     max-width:1424px;
     width:80vw;
-    margin:auto;
-    display:block;
-    margin-top:calc((-40vh + -30vw)/2);
+    position: sticky;
+    top:0;
+    left:calc((100vw - min(1424px,80vw))/2);
+    opacity: .4;
+    z-index: -1;
     pointer-events: none;
 }
 
 
 #blurbImage{
-    width:25vw;
-    margin:2.5vw;
-    min-width: 400px;
-    border-radius: 10px;
-    box-shadow:rgb(0 0 0 / 28%) 0px 20px 40px
+    
 }
 
 .imageCredit{
