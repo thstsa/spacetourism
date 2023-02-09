@@ -34,7 +34,7 @@
         
         
         <!-- mobile version of the header-->
-        <div id="mobileHeader">
+        <div id="mobileNavbar">
             <img src="res/logowhite.png" onclick="window.open('index.html','_self')">
             <img id="burgerIcon" src="res/menu.svg" onclick="toggleBurgerMenu()">
         </div>
@@ -44,13 +44,15 @@
             <p class="pageLink" onclick="window.open('pricing.html','_self')">Pricing</p>
             <p class="pageLink" onclick="window.open('sources.html','_self')">Sources</p>
         </div>
+        
+        <img id="parallaxEarth" src="res/bigearth.png" style="position:fixed">
 
         <div class="container">
             <h1 class="subHeader">READY TO LAUNCH?</h1>
             <h2 style="font-weight: 600;text-align: center"><span class="blueGradientText">Take your first <i>small step</i> into your space travel dreams.</span></h2>
             <br>
             <div class="price-row">
-                <div id="expPriceOpt" class="price-col">
+                <div id="expPriceOpt" class="price-col grayBox">
                     
                     <div>
                         <p class="littleLogo">Armstrong</p>
@@ -65,7 +67,7 @@
                     <p>All-expenses-paid 3-month voyage into deep space</p>
                     <button onclick="alert('Were you really about to spend $49,999?')">PURCHASE</button>
                 </div>
-                <div id="comPriceOpt" class="price-col">
+                <div id="comPriceOpt" class="price-col grayBox">
                     
                     <div>
                         <p class="littleLogo">Armstrong</p>
@@ -82,6 +84,63 @@
             </div>
 
         </div>
+        
+        
+        <div class="bigGap"></div>
+        
+        <h1 class="subHeader" style="text-align: center">DON'T TAKE OUR WORD FOR IT</h1>
+        <h2 style="font-weight: 600;text-align: center"><span class="blueGradientText">Hear what our customers think.</span></h2>
+        <br>
+        
+        <div class="testimonial grayBox">
+            <p><span>❝</span><br>I can say without a doubt that the Armstrong program has changed my life. The information and training was thorough and interactive and landed my a job at NASA.</p>
+            <p style="text-align: right"><span>❞</span></p>
+            
+            
+            <div style="display:flex">
+                <div><img src="res/ben.png"></div>
+                <div class="testimonialCite">
+                    <p class="testimonialName">Benjamin Nasse</p>
+                    <p>NASA Pilot Astronaut @ Washingon, DC</p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="testimonialConnector"></div>
+        
+        <div class="testimonial grayBox">
+            <p><span>❝</span><br>After getting my aerospace degree at MIT, I knew that Armstrong was the next step in my journey. The program provided my with valuable resources and in-industry expierence that can't be found anywhere else.</p>
+            <p style="text-align: right"><span>❞</span></p>
+            
+            
+            <div style="display:flex">
+                <div><img src="res/nolan.png"></div>
+                <div class="testimonialCite">
+                    <p class="testimonialName">Nolan Yee</p>
+                    <p>NASA Aerospace Engineer and Astronaut @ Hampton, VA</p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="testimonialConnector"></div>
+        
+        <div class="testimonial grayBox">
+            <p><span>❝</span><br>Everyday, Armstrong brings me closer to my dream of being an astronaut. Looking back months ago, I would've have never imagined myself learning the ins and outs of space travel alongside such amazing teachers.</p>
+            <p style="text-align: right"><span>❞</span></p>
+            
+            
+            <div style="display:flex">
+                <div><img src="res/shiloh.png"></div>
+                <div class="testimonialCite">
+                    <p class="testimonialName">SHILOH OLOTU</p>
+                    <p>Current Armstrong Trainee @ Houston, TX</p>
+                </div>
+            </div>
+            
+        </div>
+        
         
         
         <br><br><br>
