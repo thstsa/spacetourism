@@ -52,4 +52,4 @@ function typewriter(elementId, words, wordPause,emptyPause){
     
 }
 
-typewriter("typewrite",["history","astronauts","the future"],35,5);
+typewriter("typewrite",["history","astronauts","the future"],55,5);

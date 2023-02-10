@@ -111,6 +111,10 @@ body{
     margin-bottom: 10px;
 }
 
+.gradientSub{
+    font-weight: 600;
+    text-align: center;
+}
 
 
 
@@ -234,13 +238,18 @@ body{
     background-color: rgba(255,255,255,0.05);
 }
 
+
+.techSub{
+    font-family: 'Bebas Neue';
+    font-size: 49px;
+    color:white;
+}
+
 .funFactSection{
-    width:40%;
+
     padding:10px;
-    margin:auto;
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 10px;
-    box-shadow: 0 0 50px rgb(240 220 255 / 10%);
     background-color: rgb(39 33 60);
 }
 
@@ -304,8 +313,8 @@ body{
 } 
 
 #expPriceOpt{
-    margin-top:4vh;
-    margin-bottom:4vh;
+    margin-top:50px;
+    margin-bottom:50px;
 }
 
 #expPriceOpt button{
