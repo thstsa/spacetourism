@@ -142,7 +142,7 @@ body{
     color:rgb(241 239 228);
     font-size:var(--subHeaderSize);
     font-family: 'Bebas Neue';
-    letter-spacing:.055vw;
+    letter-spacing:.-1px;
     margin-top:10px;
     margin-bottom: 10px;
 }
