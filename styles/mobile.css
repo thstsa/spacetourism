@@ -138,6 +138,7 @@ body{
 }
 
 .subHeader{
+    text-align: center;
     color:rgb(241 239 228);
     font-size:var(--subHeaderSize);
     font-family: 'Bebas Neue';
@@ -196,15 +197,12 @@ body{
 
 
 .imageBlurb{
-    display: flex;
+    display: grid;
     justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
 }
 
 .imageBlurb img{
-    margin: 25px;
+    width:80vw;
     border-radius: 10px;
     box-shadow:rgb(0 0 0 / 28%) 0px 20px 40px;
     
@@ -400,13 +398,6 @@ body{
 
 /*images*/
 
-#blurbImage{
-    width:25vw;
-    margin:2.5vw;
-    min-width: 400px;
-    border-radius: 10px;
-    box-shadow:rgb(0 0 0 / 28%) 0px 20px 40px
-}
 
 .imageCredit{
     opacity: .3;
