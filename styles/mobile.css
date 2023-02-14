@@ -66,7 +66,7 @@ body{
     
     display: grid;
     justify-content: center;
-    align-items:center;
+    align-content:center;
 }
 
 #mobileNavbar img{
@@ -96,6 +96,7 @@ body{
     cursor: pointer;
     text-align: center;
     font-weight: 600;
+    margin: 6vh;
 }
 
 #desktopHeader{
@@ -235,6 +236,10 @@ body{
     opacity: .9;
 }
 
+#rmSlideSub{
+    font-size: 12.5px;
+}
+
 
 #roadmapSlide h3{
     font-weight: 600;
@@ -269,6 +274,8 @@ body{
     flex-shrink: 0;
     border-radius: 10px;
     cursor: pointer;
+    margin-left:10px;
+    margin-right: 10px;
 }
 
 .slideButton:hover{
