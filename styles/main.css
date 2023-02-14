@@ -378,6 +378,12 @@ body{
 }
 
 
+.sourceSection p{
+    word-wrap: wrap;
+    word-break: break-all;
+}
+
+
 
 #footer{
     width: 50%;

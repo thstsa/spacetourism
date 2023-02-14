@@ -11,6 +11,8 @@ public-domain johnson space center image: https://commons.wikimedia.org/wiki/Fil
 Free-to use zero g image: https://www1.grc.nasa.gov/facilities/zero-g/
 public-domain man on treadmill: https://commons.wikimedia.org/wiki/File:US_Navy_070406-N-7130B-187_In_the_aft_gym_aboard_the_aircraft_carrier_USS_Ronald_Reagan_(CVN_76),_Master_Chief_Electronics_Technician_James_Poletto,_from_New_Milford,_Conn.,_runs_on_the_treadmill.jpg
 public-domain capsule recovery iamge: https://commons.wikimedia.org/wiki/File:Apollo_13_Recovery_Area_-_GPN-2002-000052.jpg
+public-domain james buchli: https://commons.wikimedia.org/wiki/File:Astronaut_James_Buchli_-_Portrait.jpg
+public domain 3 astronauts: https://commons.wikimedia.org/wiki/File:Ronald_McNair,_Guion_Bluford,_and_Fred_Gregory_(S79-36529,_restoration).jpg
 
 open-source nav arrows and menu icons: iconoir.com
 

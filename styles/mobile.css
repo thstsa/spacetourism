@@ -385,6 +385,59 @@ body{
 
 
 
+.testimonial{
+    width:80vw;
+    margin:auto;
+}
+
+.testimonialConnector{
+    background-color: rgba(151,149,189,0.4);
+    width:2px;
+    height: 10vh;
+    margin: auto;
+    margin-top:15vh;
+    margin-bottom: 15vh;
+    
+}
+
+.testimonial img{
+    width:80px;
+    border-radius: 100%;
+    opacity: .6;
+    margin-right: 15px;
+}
+
+
+.testimonialCite{
+    display: grid;
+    align-content: center;
+}
+.testimonialCite p{
+    margin: 0;
+}
+.testimonialName{
+    font-family: var(--headerFont);
+    font-size: 25px;
+}
+
+.testimonial span{
+    font-family: var(--headerFont);
+    font-size: 50px;
+}
+
+
+
+
+.sourceSection{
+    width:80vw;
+    margin:auto;
+}
+.sourceSection p{
+    word-wrap: wrap;
+    word-break: break-all;
+}
+
+
 
 #footer{
     opacity: 0.3;
