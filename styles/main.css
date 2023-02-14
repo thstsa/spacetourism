@@ -2,6 +2,7 @@
     --subHeaderSize:min(5.5vw,90px);
     --priceTitleSize:min(50px);
     --paraFontSize:min(1.5vw,23px);
+    --headerFont:'Bebas Neue';
 }
 
 
@@ -60,7 +61,7 @@ body{
 
 #headerLogo{
     opacity: .75;
-    font-family: 'Bebas Neue';
+    font-family: var(--headerFont);
     font-size: 25px;
     transition: .3s;
     cursor: pointer;
@@ -98,14 +99,14 @@ body{
 
 .bigHeader{
     font-size: 100px;
-    font-family: 'Bebas Neue';
+    font-family: var(--headerFont);
     letter-spacing: 1px;
 }
 
 .subHeader{
     color:rgb(241 239 228);
     font-size:var(--subHeaderSize);
-    font-family: 'Bebas Neue';
+    font-family: var(--headerFont);
     letter-spacing:.055vw;
     margin-top:10px;
     margin-bottom: 10px;
@@ -242,7 +243,7 @@ body{
 
 
 .techSub{
-    font-family: 'Bebas Neue';
+    font-family: var(--headerFont);
     font-size: 49px;
     color:white;
 }
@@ -270,7 +271,7 @@ body{
     font-weight: 600;
     text-align:center !important;
     margin:0;
-    font-family: 'Bebas Neue';
+    font-family: var(--headerFont);
     font-size: 150%;
     letter-spacing: 1px;
 }
@@ -293,7 +294,7 @@ body{
 }
 .price-col h2{
     font-size: var(--priceTitleSize);
-    font-family: 'Bebas Neue';
+    font-family: var(--headerFont);
     margin: 0;
     font-weight: 600;
 }
@@ -367,12 +368,12 @@ body{
     margin: 0;
 }
 .testimonialName{
-    font-family: 'Bebas Neue';
+    font-family: var(--headerFont);
     font-size: 25px;
 }
 
 .testimonial span{
-    font-family: 'Bebas Neue';
+    font-family: var(--headerFont);
     font-size: 50px;
 }
 
