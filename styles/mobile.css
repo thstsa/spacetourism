@@ -138,12 +138,20 @@ body{
 }
 
 .subHeader{
+    text-align: center;
     color:rgb(241 239 228);
     font-size:var(--subHeaderSize);
     font-family: 'Bebas Neue';
-    letter-spacing:.055vw;
+    letter-spacing:.-1px;
     margin-top:10px;
     margin-bottom: 10px;
+}
+
+
+.gradientSub{
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
 }
 
 .paragraphText{
@@ -189,12 +197,12 @@ body{
 
 
 .imageBlurb{
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 
 .imageBlurb img{
-    margin: 25px;
+    width:80vw;
     border-radius: 10px;
     box-shadow:rgb(0 0 0 / 28%) 0px 20px 40px;
     
@@ -268,10 +276,13 @@ body{
 }
 
 
+.techSub{
+    font-family: 'Bebas Neue';
+    color:white;
+}
+
 .funFactSection{
-    width:80%;
     padding:10px;
-    margin:auto;
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 10px;
     box-shadow: 0 0 50px rgb(240 220 255 / 10%);
@@ -297,15 +308,21 @@ body{
     letter-spacing: 1px;
 }
 .price-row {
-    display: flex;
+    display: grid;
+    align-content: center;
     justify-content: center;
 }
 .price-col {
-    width:350px;
+    width:80%;
     padding: 30px;
     text-align: center;
     margin:20px;
     display: grid;
+    border: 2px solid;
+    box-shadow: 0 0 30px black;
+    background-color: rgb(39 33 60);
+    border-radius: 15px;
+    padding: 15px;
 }
 .price-col h3{
     font-size: 22px;
@@ -319,6 +336,7 @@ body{
 }
 .price-col p{
     text-align: left;
+    margin: 5px;
 }
 .price-col button {
     font-family: 'Poppins';
@@ -335,8 +353,8 @@ body{
 } 
 
 #expPriceOpt{
-    margin-top:4vh;
-    margin-bottom:4vh;
+    margin-top:25px;
+    margin-bottom:25px;
 }
 
 #expPriceOpt button{
@@ -380,13 +398,6 @@ body{
 
 /*images*/
 
-#blurbImage{
-    width:25vw;
-    margin:2.5vw;
-    min-width: 400px;
-    border-radius: 10px;
-    box-shadow:rgb(0 0 0 / 28%) 0px 20px 40px
-}
 
 .imageCredit{
     opacity: .3;
