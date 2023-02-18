@@ -386,19 +386,20 @@ body{
 
 
 .testimonial{
-    width:80vw;
-    margin:auto;
+    width: 70vw;
+    margin: auto;
+    padding: 25px;
+    border: 2px solid;
+    border-radius: 15px;
+    background-color: rgb(39 33 60);
 }
 
 .testimonialConnector{
-    background-color: rgba(151,149,189,0.4);
-    width:2px;
-    height: 10vh;
-    margin: auto;
-    margin-top:15vh;
-    margin-bottom: 15vh;
-    
+    height: 4vh;
+    background: transparent;
 }
+    
+
 
 .testimonial img{
     width:80px;
